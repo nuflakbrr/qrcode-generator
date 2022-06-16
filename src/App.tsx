@@ -4,9 +4,9 @@ import QRCode from 'qrcode';
 function App() {
   function generateQR() {
     let canvas = document.getElementById('canvas');
-    let qrInput = document.getElementById('qrInput');
+    let qrInput = (document.getElementById('qrInput') as HTMLInputElement).value;
 
-    QRCode.toCanvas(canvas, qrInput.value, (err: any) => {
+    QRCode.toCanvas(canvas, qrInput, (err: any) => {
       if (err) {
         console.error(err);
       }
