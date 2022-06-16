@@ -16,8 +16,7 @@ function App() {
 
   return (
     <div className='bg-gray-900 min-h-screen overflow-hidden'>
-      <div className='flex flex-col items-center justify-center max-w-4xl mx-auto
-'>
+      <div className='flex flex-col items-center justify-center max-w-4xl mx-auto'>
         <div className='bg-slate-100'>
           <canvas width={100} height={100} className='border-4 border-sky-500' id='canvas'></canvas>
         </div>
