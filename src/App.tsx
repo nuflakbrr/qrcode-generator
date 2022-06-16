@@ -7,10 +7,7 @@ function App() {
     let qrInput = (document.getElementById('qrInput') as HTMLInputElement).value;
 
     QRCode.toCanvas(canvas, qrInput, (err: any) => {
-      if (err) {
-        console.error(err);
-      }
-      console.log('scan berhasil')
+      if (err) console.error(err);
     });
   }
 
